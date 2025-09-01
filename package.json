@@ -2,7 +2,7 @@
   "name": "fastfront",
   "version": "2.0.0",
   "type": "module",
-  "description": "Core utility package with 50+ functions for objects, storage, files, dates, and strings - essential utilities for web development",
+  "description": "Lightweight utility package with 30+ functions for storage, files, dates, and strings - essential utilities for web development",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -20,7 +20,6 @@
   },
   "keywords": [
     "utilities",
-    "object",
     "storage",
     "file",
     "date",
@@ -28,7 +27,7 @@
     "typescript",
     "javascript",
     "web-development",
-    "core"
+    "lightweight"
   ],
   "author": "prakash",
   "license": "MIT",

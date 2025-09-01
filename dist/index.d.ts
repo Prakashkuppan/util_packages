@@ -1,52 +1,4 @@
 /**
- * Object utility functions for common object operations
- */
-/**
- * Creates a deep clone of an object
- */
-declare function deepClone<T>(obj: T): T;
-/**
- * Merges multiple objects deeply
- */
-declare function deepMerge<T extends Record<string, any>>(...objects: T[]): T;
-/**
- * Picks specified keys from an object
- */
-declare function pick<T, K extends keyof T>(obj: T, keys: K[]): Pick<T, K>;
-/**
- * Omits specified keys from an object
- */
-declare function omit<T, K extends keyof T>(obj: T, keys: K[]): Omit<T, K>;
-/**
- * Checks if an object is empty
- */
-declare function isEmpty(obj: any): boolean;
-/**
- * Gets nested object property safely
- */
-declare function get(obj: any, path: string, defaultValue?: any): any;
-/**
- * Sets nested object property safely
- */
-declare function set(obj: any, path: string, value: any): any;
-/**
- * Flattens a nested object
- */
-declare function flatten(obj: any, prefix?: string): Record<string, any>;
-/**
- * Inverts object keys and values
- */
-declare function invert(obj: Record<string, any>): Record<string, any>;
-/**
- * Creates an object from key-value pairs
- */
-declare function fromPairs(pairs: [string, any][]): Record<string, any>;
-/**
- * Converts object to key-value pairs
- */
-declare function toPairs(obj: Record<string, any>): [string, any][];
-
-/**
  * Storage utility functions for localStorage and sessionStorage
  */
 /**
@@ -245,4 +197,4 @@ declare function capitalize(str: string): string;
  */
 declare function slugify(str: string): string;
 
-export { capitalize, cookies, deepClone, deepMerge, flatten as flattenObject, formatDate, formatFileSize, fromPairs, generateUniqueFilename, getDirectory, getFileCategory, getFileExtension, getFilename, getMimeType, get as getObject, invert as invertObject, isAbsolutePath, isArchive, isAudio, isDocument, isEmpty, isExecutable, isImage, isRelativePath, isValidFilename, isVideo, joinPath, localStorage, normalizePath, omit, pick, removeFileExtension, sanitizeFilename, sessionStorage, set, slugify, timeAgo, toPairs };
+export { capitalize, cookies, formatDate, formatFileSize, generateUniqueFilename, getDirectory, getFileCategory, getFileExtension, getFilename, getMimeType, isAbsolutePath, isArchive, isAudio, isDocument, isExecutable, isImage, isRelativePath, isValidFilename, isVideo, joinPath, localStorage, normalizePath, removeFileExtension, sanitizeFilename, sessionStorage, slugify, timeAgo };

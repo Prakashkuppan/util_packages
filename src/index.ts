@@ -1,20 +1,5 @@
 // Essential utilities - Core functionality only
 
-// Object utilities
-export {
-  deepClone,
-  deepMerge,
-  pick,
-  omit,
-  isEmpty,
-  get as getObject,
-  set,
-  flatten as flattenObject,
-  invert as invertObject,
-  fromPairs,
-  toPairs
-} from './objects';
-
 // Storage utilities
 export { localStorage, sessionStorage, cookies } from './storage';
 
